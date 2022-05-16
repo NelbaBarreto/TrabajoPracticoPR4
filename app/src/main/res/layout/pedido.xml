@@ -2,24 +2,19 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/lMain"
-    style="@style/DefaultLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.columbia.trabajopractico.MainActivity">
+    tools:context=".Pedido">
 
-    <Button
-        android:id="@+id/bHacerPedido"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ButtonDanger"
-        android:text="@string/hacer_pedido" />
+        android:layout_weight="1" />
 
-    <Button
-        android:id="@+id/bRegistrarse"
+    <Spinner
+        android:id="@+id/spinner2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ButtonDangerLight"
-        android:text="@string/registrarse" />
+        android:layout_weight="1" />
 </LinearLayout>

@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">TranajoPractico</string>
+    <string name="app_name">Pizza Pizzuelas</string>
+    <string name="hacer_pedido">Hacer Pedido</string>
+    <string name="registrarse">Registrarse</string>
 </resources>

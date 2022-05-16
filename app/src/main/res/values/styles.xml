@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DefaultLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dimen10</item>
+    </style>
+    <style name="ButtonDanger">
+        <item name="android:backgroundTint">@color/danger</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="ButtonDangerLight">
+        <item name="android:backgroundTint">@color/danger_light</item>
+        <item name="android:textColor">@color/danger</item>
+    </style>
+</resources>

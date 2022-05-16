@@ -1,4 +1,4 @@
-package com.columbia.tranajopractico
+package com.columbia.trabajopractico
 
 import org.junit.Test
 
