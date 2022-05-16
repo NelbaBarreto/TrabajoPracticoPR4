@@ -7,9 +7,13 @@
     <style name="ButtonDanger">
         <item name="android:backgroundTint">@color/danger</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:layout_margin">@dimen/dimen2</item>
     </style>
     <style name="ButtonDangerLight">
         <item name="android:backgroundTint">@color/danger_light</item>
         <item name="android:textColor">@color/danger</item>
+        <item name="android:layout_margin">@dimen/dimen2</item>
     </style>
+
+    <dimen name="dimen2">2dp</dimen>
 </resources>

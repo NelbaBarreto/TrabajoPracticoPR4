@@ -2,4 +2,27 @@
     <string name="app_name">Pizza Pizzuelas</string>
     <string name="hacer_pedido">Hacer Pedido</string>
     <string name="registrarse">Registrarse</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="sabor">Sabor</string>
+    <string name="tamano">Tamaño</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="napolitana">Napolitana</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="jamon_panceta">Jamón y Panceta</string>
+    <string name="grande">Grande</string>
+    <string name="mediano">Mediano</string>
+    <string name="personal">Personal</string>
+
+    <array name="array_sabor">
+        <item>@string/napolitana</item>
+        <item>@string/pepperoni</item>
+        <item>@string/jamon_panceta</item>
+    </array>
+
+    <array name="array_tamano">
+        <item>@string/grande</item>
+        <item>@string/mediano</item>
+        <item>@string/personal</item>
+    </array>
 </resources>
