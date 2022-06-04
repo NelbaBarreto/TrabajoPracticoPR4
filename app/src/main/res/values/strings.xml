@@ -13,6 +13,9 @@
     <string name="grande">Grande</string>
     <string name="mediano">Mediano</string>
     <string name="personal">Personal</string>
+    <string name="usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="repetir_contrasena">Repetir Contraseña</string>
 
     <array name="array_sabor">
         <item>@string/napolitana</item>

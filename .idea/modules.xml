@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TranajoPractico.iml" filepath="$PROJECT_DIR$/.idea/modules/TranajoPractico.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TranajoPractico.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TrabajoPractico.iml" filepath="$PROJECT_DIR$/.idea/modules/TrabajoPractico.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/TrabajoPractico.app.unitTest.iml" />
     </modules>
   </component>
 </project>
