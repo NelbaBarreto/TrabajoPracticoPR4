@@ -21,8 +21,9 @@
     <string name="registro_cancelado">Registro cancelado.</string>
 
     // Mensajes de error
-    <string name="err_fld_blank">Debe ingresar un valor para este campo</string>
-    <string name="err_pass_do_not_match">Las contraseñas no coinciden</string>
+    <string name="err_fld_blank">Debe ingresar un valor para este campo.</string>
+    <string name="err_pass_do_not_match">Las contraseñas no coinciden.</string>
+    <string name="err_mst_register">Debe registrarse para poder realizar un pedido.</string>
 
     <array name="array_sabor">
         <item>@string/napolitana</item>
