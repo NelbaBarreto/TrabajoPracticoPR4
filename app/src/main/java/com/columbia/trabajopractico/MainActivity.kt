@@ -15,6 +15,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var bRegistro: Button
 
     private var usuario: String = ""
+    private var tamano: String = ""
+    private var sabor: String = ""
+    private var cantidad: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +37,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             if (usuario?.isNullOrEmpty()) {
                 mostrarMensaje(getString(R.string.err_mst_register))
             } else {
-                mostrarMensaje("a")
-               // lanzarHacerPedido()
+                lanzarHacerPedido()
             }
         }
     }
@@ -44,11 +46,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
         if (it.resultCode == Activity.RESULT_OK) {
             (it.data?.extras?.getString("usuario") ?: "").also { usuario = it }
+
             mostrarMensaje(getString(R.string.registro_exitoso))
         } else if (it.resultCode == Activity.RESULT_CANCELED) {
             mostrarMensaje(getString(R.string.registro_cancelado))
         }
     }
+
+    private val launcherPedido =
+        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            if (it.resultCode == Activity.RESULT_OK) {
+                (it.data?.extras?.getString("sabor") ?: "").also { sabor = it }
+                (it.data?.extras?.getString("tamanio") ?: "").also { tamano = it }
+                (it.data?.extras?.getString("cantidad") ?: "").also { cantidad = it }
+
+                mostrarMensaje(getString(R.string.pedido_exitoso, usuario, cantidad, sabor, tamano))
+            } else if (it.resultCode == Activity.RESULT_CANCELED) {
+                mostrarMensaje(getString(R.string.pedido_cancelado))
+            }
+        }
 
     private fun lanzarRegistro() {
         val intent = Intent(this, Registro::class.java)
@@ -57,7 +73,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun lanzarHacerPedido() {
         val intent = Intent(this, Pedido::class.java)
-        //launcherRegistro.launch(intent)
+        launcherPedido.launch(intent)
     }
 
     private fun mostrarMensaje(mensaje: String) {

@@ -2,6 +2,7 @@
 
 package com.columbia.trabajopractico
 
+import Modelos.Pizza
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Context
@@ -15,7 +16,6 @@ import android.widget.EditText
 import android.widget.Toast
 
 class Registro : AppCompatActivity(), View.OnClickListener  {
-    //Class variables
     private lateinit var username: String
     private lateinit var password: String
     private lateinit var repeatPassword: String
@@ -83,24 +83,29 @@ class Registro : AppCompatActivity(), View.OnClickListener  {
     }
 
     inner class ProcesoRegistro(private var contexto: Context) :
-        AsyncTask<String, String, Long>() {
+        AsyncTask<String, Int, Long>() {
         private lateinit var progreso: ProgressDialog
 
         override fun onPreExecute() {
             progreso = ProgressDialog(contexto)
             progreso.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL)
             progreso.setMessage(getString(R.string.procesando_registro))
-            progreso.setCancelable(true)
             progreso.progress = 0
             progreso.show()
         }
 
         override fun doInBackground(vararg params: String?): Long {
-            progreso.progress = 50
-            SystemClock.sleep(2000)
-            progreso.progress = 100
+            for (i in 1..2) {
+                SystemClock.sleep(1000)
+                publishProgress(i + 100 / 2)
+            }
+
             intent.putExtra("usuario", params[0])
             return 1L
+        }
+
+        override fun onProgressUpdate(vararg values: Int?) {
+            progreso.setProgress(values[0]!!)
         }
 
         override fun onPostExecute(result: Long?) {

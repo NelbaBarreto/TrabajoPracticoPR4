@@ -19,11 +19,15 @@
     <string name="procesando_registro">El registro se está procesando...</string>
     <string name="registro_exitoso">Registro exitoso. Ya puede realizar pedidos.</string>
     <string name="registro_cancelado">Registro cancelado.</string>
+    <string name="pedido_exitoso">El usuario %s ha pedido %s pizza(s) de sabor %s y tamaño %s.</string>
+    <string name="pedido_cancelado">Pedido cancelado.</string>
+    <string name="mensaje_cancelar">Tiene 15 segundos para cancelar el pedido...</string>
 
     // Mensajes de error
     <string name="err_fld_blank">Debe ingresar un valor para este campo.</string>
     <string name="err_pass_do_not_match">Las contraseñas no coinciden.</string>
     <string name="err_mst_register">Debe registrarse para poder realizar un pedido.</string>
+    <string name="err_can_cero">Debe ingresar un valor mayor a 0.</string>
 
     <array name="array_sabor">
         <item>@string/napolitana</item>
