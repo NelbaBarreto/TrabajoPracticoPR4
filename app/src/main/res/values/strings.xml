@@ -4,9 +4,9 @@
     <string name="registrarse">Registrarse</string>
     <string name="aceptar">Aceptar</string>
     <string name="cancelar">Cancelar</string>
-    <string name="sabor">Sabor</string>
-    <string name="tamano">Tamaño</string>
-    <string name="cantidad">Cantidad</string>
+    <string name="sabor">Sabor:</string>
+    <string name="tamano">Tamaño:</string>
+    <string name="cantidad">Cantidad:</string>
     <string name="napolitana">Napolitana</string>
     <string name="pepperoni">Pepperoni</string>
     <string name="jamon_panceta">Jamón y Panceta</string>
@@ -16,6 +16,13 @@
     <string name="usuario">Usuario</string>
     <string name="contrasena">Contraseña</string>
     <string name="repetir_contrasena">Repetir Contraseña</string>
+    <string name="procesando_registro">El registro se está procesando...</string>
+    <string name="registro_exitoso">Registro exitoso. Ya puede realizar pedidos.</string>
+    <string name="registro_cancelado">Registro cancelado.</string>
+
+    // Mensajes de error
+    <string name="err_fld_blank">Debe ingresar un valor para este campo</string>
+    <string name="err_pass_do_not_match">Las contraseñas no coinciden</string>
 
     <array name="array_sabor">
         <item>@string/napolitana</item>

@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/etUsuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -23,19 +23,19 @@
             android:hint="@string/usuario" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:hint="@string/contrasena" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/etRepeatPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
             android:hint="@string/repetir_contrasena" />
     </LinearLayout>
 
